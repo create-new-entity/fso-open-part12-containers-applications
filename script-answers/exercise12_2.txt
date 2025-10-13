@@ -1,0 +1,40 @@
+Script started on Mon Oct 13 10:40:04 2025
+bash: loads: command not found
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ docker container run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kb8a35db46e38: Pulling fs layer [1B[1A[2Kb8a35db46e38: Downloading    299kB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  1.188MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  2.081MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  2.974MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  4.162MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  5.337MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  6.799MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading   8.29MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  9.773MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  10.94MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  12.42MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading   13.3MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  14.48MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  15.97MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  17.45MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  18.63MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading   20.1MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  21.58MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  22.76MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  24.25MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  25.44MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  26.64MB/28.86MB[1B[1A[2Kb8a35db46e38: Downloading  27.82MB/28.86MB[1B[1A[2Kb8a35db46e38: Verifying Checksum [1B[1A[2Kb8a35db46e38: Download complete [1B[1A[2Kb8a35db46e38: Extracting  294.9kB/28.86MB[1B[1A[2Kb8a35db46e38: Extracting  4.129MB/28.86MB[1B[1A[2Kb8a35db46e38: Extracting  7.668MB/28.86MB[1B[1A[2Kb8a35db46e38: Extracting  11.21MB/28.86MB[1B[1A[2Kb8a35db46e38: Extracting  15.63MB/28.86MB[1B[1A[2Kb8a35db46e38: Extracting  19.76MB/28.86MB[1B[1A[2Kb8a35db46e38: Extracting  23.89MB/28.86MB[1B[1A[2Kb8a35db46e38: Extracting  26.54MB/28.86MB[1B[1A[2Kb8a35db46e38: Extracting  28.86MB/28.86MB[1B[1A[2Kb8a35db46e38: Pull complete [1BDigest: sha256:59a458b76b4e8896031cd559576eac7d6cb53a69b38ba819fb26518536368d86
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@3046b75eea63: /root@3046b75eea63:/# [K]0;root@3046b75eea63: /root@3046b75eea63:/# ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@3046b75eea63: /root@3046b75eea63:/# mkdir       cd usr
+[?2004l[?2004h]0;root@3046b75eea63: /usrroot@3046b75eea63:/usr# ls
+[?2004l[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlibexec[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+[?2004h]0;root@3046b75eea63: /usrroot@3046b75eea63:/usr# cd src
+[?2004l[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# ls
+[?2004l[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# mkdir app
+[?2004l[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# ls
+[?2004l[0m[01;34mapp[0m
+[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# sudo nano         nano index.js
+[?2004lbash: nano: command not found
+[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# touch index.js
+[?2004l[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# ls
+[?2004l[0m[01;34mapp[0m  index.js
+[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# rm index.js 
+[?2004l[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# ls
+[?2004l[0m[01;34mapp[0m
+[?2004h]0;root@3046b75eea63: /usr/srcroot@3046b75eea63:/usr/src# cd app
+[?2004l[?2004h]0;root@3046b75eea63: /usr/src/approot@3046b75eea63:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@3046b75eea63: /usr/src/approot@3046b75eea63:/usr/src/app# ls
+[?2004lindex.js
+[?2004h]0;root@3046b75eea63: /usr/src/approot@3046b75eea63:/usr/src/app# \ exit
+[?2004lexit
+bash-3.2$ exit
+exit
+
+Script done on Mon Oct 13 10:42:45 2025
