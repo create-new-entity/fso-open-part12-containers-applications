@@ -1,0 +1,10 @@
+
+
+services:
+  app:                   
+    image: part-12-todo 
+    build: .              
+    ports:                
+      - 3000:3000
+    env_file:
+      - .env
