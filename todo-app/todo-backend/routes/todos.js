@@ -4,13 +4,6 @@ const { incrementTodoCounter, getTodoCounterValue } = require('../util/todoCount
 const router = express.Router();
 
 
-router.get('/statistics', async (_, res) => {
-  const totalCount = await getTodoCounterValue();
-  res.send({
-    added_todos: totalCount
-  })
-})
-
 /* GET todos listing. */
 router.get('/', async (_, res) => {
   const todos = await Todo.find({})
