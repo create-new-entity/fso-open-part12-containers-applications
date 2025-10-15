@@ -1,7 +1,7 @@
-POST http://localhost:3000/todos
+POST http://localhost:8080/api/todos
 Content-Type: application/json
 
 {
-    "text": "Another task 5",
+    "text": "Play FC 27",
     "done": false
 }

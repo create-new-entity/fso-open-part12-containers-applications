@@ -7,6 +7,7 @@ if (MONGO_URL && !mongoose.connection.readyState) {
   .then(() => console.log('DB Connected.'))
   .catch((e) => {
     console.log('e', e)
+    console.log('MONGO_URL', MONGO_URL)
     console.log('DB Connection Failed!')
   })
 }
