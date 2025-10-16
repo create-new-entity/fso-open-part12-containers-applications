@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/68adf6daf566294298668a44
+Content-Type: application/json
+
+{
+    "author": "George Orwell",
+    "title": "2184",
+    "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+    "likes": 30
+}

@@ -1,0 +1,44 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyMCIsImlkIjoiNjhiNDVmYjA1OWFlNGExMTA5YjIzN2JkIiwiaWF0IjoxNzU3NDE5MDcwfQ.OYSv4tlwGCCcf1X21PhhwOUciOCChaCOI7RrBhlstGg
+
+{
+    "author": "George Orwell",
+    "title": "Blog with token 5",
+    "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+    "likes": 30
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "author": "George Orwell",
+    "title": "1984 ( No \"like\" property in payload? Why? )",
+    "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four"
+}
+
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "author": "No title property",
+    "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+    "likes": 0
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "George Orwell",
+    "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+    "likes": 0
+}
