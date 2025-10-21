@@ -1,0 +1,1 @@
+### This repository is part 12 of [this repository](https://github.com/create-new-entity/fso-open). Please browse the linked repository for better details.
